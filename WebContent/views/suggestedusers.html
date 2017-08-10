@@ -1,27 +1,26 @@
 <link rel="stylesheet" href="css/suggestedusers.css">
 <div class="container">
-{{suggestedUsers}}
-<table class="table table-striped" style="background-color:#ffb310">
+<table class="table">
 	<thead style="color:#ffb310">
 
-		<tr>
-			<th style="color:#fff">Firstname</th>
-			<th style="color:#fff">Lastname</th>
-			<th style="color:#fff">Role</th>
-			<th style="color:#fff">Online</th>
-			<th style="color:#fff">Friend Request</th>
+		<tr style="color:#fff">
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Role</th>
+			<th>Online</th>
+			<th>Friend Request</th>
 		</tr>
 	</thead>
 
 	<tbody>
-		<tr ng-repeat="user in suggestedUsers">
+		<tr ng-repeat="user in suggestedUsers" style="color:#fff">
 			<td>{{user.firstname}}</td>
 			<td>{{user.lastname}}</td>
 			<td>{{user.role}}</td>
 			<td ng-if="user.online">YES</td>
 			<td ng-if="!user.online">NO</td>
 		
-			<td><a href="" ng-click="friendrequest(user.username)" class="btn btn-default">Send Friend Request</a></td>
+			<td><a href="" ng-click="friendrequest(user.username)" class="btn btn-default" style="background-color:#ffb310">Send Friend Request</a></td>
 			</tr>
 	</tbody>
 </table>
