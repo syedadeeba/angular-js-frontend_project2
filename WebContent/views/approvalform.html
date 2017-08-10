@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="css/approvalform.css">
+<div class="w3-main">
+	<div class="about-bottom main-agile book-form">
+	<h2 class="tittle">Approval Form</h2>
+<div class="row">
+<div class="panel panel-default">
+<div class="panel-heading">
+<div>{{blogPost.title}}</div>
+<span><strong>Created By:</strong>{{blogPost.createdBy.username}}</span>
+<span><strong>on: </strong>{{blogPost.postedOn |date:'medium'}}</span>
+</div>
+<div class="panel-body">{{blogPost.description}}</div>
+</div>
+</div>
+<form>
+<input type="radio" ng-model="blogPost.approved" value="true" style="color:#fff">Approval<br>
+<input type="radio" ng-model="blogPost.approved" value="false" style="color:#fff">Rejected<br><br>
+<div class="make wow shake">
+<button type="submit" style="background-color:#ffb310" ng-click="updateApproval()">Update Approval</button>
+</div>
+</form>
+</div>
+</div>

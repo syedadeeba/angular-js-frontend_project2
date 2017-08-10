@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/updateprofile.css">
+<body>
+<div class="header">
+	<h1>Register Form</h1>
+</div>
+<div class="w3-main">
+	<!-- Main -->
+	<div class="about-bottom main-agile book-form">
+		<div class="alert-close"> </div>
+		<h2 class="tittle">Edit Form</h2>
+		<form action="#" method="post">
+			<div class="form-date-w3-agileits">
+              <label>First Name</label>
+              <input name="Name" type="text" ng-model="userobj.firstname"  placeholder="Enter your First Name" required><br>
+              <label>Last Name</label>
+              <input name="Name" type="text" ng-model="userobj.lastname" placeholder="Enter your Last Name" required><br>
+              <label>Email</label>
+              <input name="mail" type="text" ng-model="userobj.email" placeholder="Enter your Email" required><br>
+              <label>User Name</label>
+              <input name="Name" type="text" ng-model="userobj.username"  placeholder="Enter your User Name" required><br>
+              <label>Password</label>
+              <input name="Password" type="password" ng-model="userobj.password" placeholder="Enter your Password" required><br>
+              <label>Role</label>
+              <label class="radio-inline">
+	          <input type="radio" ng-model="userobj.role" value="Student">Student<br>
+	          <input type="radio" ng-model="userobj.role" value="Alumini">Alumini<br>
+	          <input type="radio" ng-model="userobj.role" value="Employee">Employee<br>
+             </label><br><br>
+             </div>
+             <div class="make wow shake">
+	         <input type="submit" value="submit" class="btn btn-primary btn-sm" ng-click="update()">
+             </div>
+{{message))
+</form>
+</div>
+</div>
+<div class="footer-w3">
+	<p>© 2017 Flat Sign Up Form. All rights reserved | Design by JOBHUB</p>
+</div>
+</body>

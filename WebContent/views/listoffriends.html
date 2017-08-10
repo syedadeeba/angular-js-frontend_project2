@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="css/listoffriends.css">
+<div>
+{{friendsList}}
+	List Of Friends
+	<table class="table">
+
+	  <tr ng-repeat="f in friendsList">
+		 <td ng-show="currentUser.username==f.fromId">{{f.fromId}}</td>
+		 <td ng-show="currentUser.username==f.toId">{{f.toId}}</td>
+			
+		 <td ng-show="currentUser.username==f.fromId">
+			<img src="http://localhost:5555/backend_project2/getimage/{{f.fromId}}" alt="Image Not Available" width="30px" height="30px" class="img-rounded">
+		 </td>
+		 
+		 <td ng-show="currentUser.username==f.toId">
+			<img src="http://localhost:5555/backend_project2/getimage/{{f.toId}}" alt="Image Not Available" width="30px" height="30px" class="img-rounded">
+		 </td>
+			
+		</tr>
+	</table>
+
+</div>

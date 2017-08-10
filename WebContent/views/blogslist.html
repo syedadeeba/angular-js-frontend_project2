@@ -1,0 +1,40 @@
+ <link rel="stylesheet" href="css/bloglist.css">
+ <div class="w3-main">
+	<div class="about-bottom main-agile book-form">
+	<h2 class="tittle">BlogPost Form</h2>
+<div class="table-responsive" ng-show="currentUser.role=='Admin'" style="color:#fff">
+	List of Blog Posts waiting for approval
+	<table class="table">
+		<tr>
+			<th style="color:#fff">Recent Posts></th>
+		</tr>
+
+		<tr
+			ng-repeat="blogPost in blogsWaitingForApproval | orderBy:'time':true">
+
+			<td style="color:#fff"><a href="#getBlogForApproval/{{blogPost.id}}">{{blogPost.title}}</a></td>
+			<td style="color:#fff">Created By: {{blogPost.createdBy.username}}</td>
+			<td style="color:#fff">Created On: {{blogPost.postedOn | date:'MM/dd/yyyy HH:mm'}}</td>
+		</tr>
+
+	</table>
+</div>
+
+<div class="table-responsive" style="color:#fff">
+	List of Blog Posts
+	<table class="table">
+		<tr>
+			<th style="color:#fff">Recent Posts</th>
+		</tr>
+
+		<tr ng-repeat="blogPost in blogsApproved | orderBy:'time':true">
+
+			<td style="color:#fff"><a href="#getBlogDetail/{{blogPost.id}}">{{blogPost.title}}</a></td>
+			<td style="color:#fff">Created By: {{blogPost.createdBy.username}}</td>
+			<td style="color:#fff">Created On: {{blogPost.postedOn | date:'MM/dd/yyyy HH:mm'}}</td>
+		</tr>
+
+	</table>
+</div>
+</div>
+</div>

@@ -1,0 +1,35 @@
+ <link rel="stylesheet" href="css/blogpostform.css">
+
+<body>
+{{message}}
+<div class="w3-main">
+	<div class="about-bottom main-agile book-form">
+		<h2 class="tittle">Blog Post</h2>
+			<div class="form-date-w3-agileits">
+            
+			<label>Blog title</label>
+			<input ng-model="blogPost.title" placeholder="Enter Blog Title">
+
+			<label>Blog Description</label>
+			<textarea ng-model="blogPost.description" placeholder="Enter Blog Description"></textarea>
+			</div>
+       <div class="make wow shake">
+			<button type="submit"  style="background-color:#ffb310" class="btn btn-default" ng-click="saveBlogPost()">Post Blog</button>
+       </div>
+</div>
+</div>
+</body>
+<!-- <table>
+		<tr>
+			<td>Enter Blog title</td>
+			<td><input ng-model="blogPost.title"></td>
+		</tr>
+		<tr>
+			<td>Enter Blog Description</td>
+			<td><textarea ng-model="blogPost.description"></textarea></td>
+		</tr>
+		<td>
+			<button class="btn btn-default" ng-click="saveBlogPost()">Post Blog</button>
+		</td>
+		<td></td>
+	</table> -->

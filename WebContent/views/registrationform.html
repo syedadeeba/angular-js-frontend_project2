@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="css/registrationform.css">
+<span style="color:red">{{error.message}}</span>
+
+<body>
+<div class="header">
+	<h1>Register Form</h1>
+</div>
+<div class="w3-main">
+	<!-- Main -->
+	<div class="about-bottom main-agile book-form">
+		<h2 class="tittle">Sign Up</h2>
+		<form action="#" method="post">
+			<div class="form-date-w3-agileits">
+				<label> First Name </label>
+				<input type="text" name="name" ng-model="user.firstname" placeholder="First Name" required="">
+				<label> Last Name </label>
+				<input type="text" name="name" ng-model="user.lastname" placeholder="Last Name" required="">
+				<label> Email </label>
+				<input type="email" name="email" ng-model="user.email" placeholder="Email" required="">
+				<label> User Name </label>
+				<input type="text" name="name" ng-model="user.username"placeholder="Last Name"required="">
+				<label> Password </label>
+				<input type="password" name="password" ng-model="user.password"placeholder="Password"required="">		
+				<label>Select Role</label>
+				<label class="radio-inline">
+				<input type="radio" ng-model="user.role" value="Student">Student<br>
+                <input type="radio" ng-model="user.role" value="Alumini">Alumini<br>
+                <input type="radio" ng-model="user.role" value="Employee">Employee<br>
+				</label><br><br>
+			</div>
+			<div class="make wow shake">
+				  <input type="submit" value="Register" ng-click="register()">
+			</div>
+		</form>
+	</div>
+	<!-- //Main -->
+</div>
+</body>
+<!--  
+<div class="header-w3l">
+		<h1>Sign Up Form</h1>
+	</div>
+<div class="main-agileits">
+	<h2 class="sub-head">Sign Up</h2>
+		<div class="sub-main">	
+			<form action="#" method="post">
+				<input name="Name" required="" type="text" ng-model="user.firstname" placeholder="First Name">
+					<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+				<input name="Name" required="" type="text" ng-model="user.lastname" placeholder="Last Name">
+					<span class="icon2"><i class="fa fa-user" aria-hidden="true"></i></span>
+
+				<input name="mail" required="" type="text" ng-model="user.email" placeholder="Email">
+					<span class="icon3"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+					
+					<input name="Name" required="" type="text" ng-model="user.username" placeholder="User Name">
+					<span class="icon4"><i class="fa fa-user" aria-hidden="true"></i></span>
+				
+				<input name="Password" required="" type="password" ng-model="user.password" placeholder="Password">
+					<span class="icon5"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
+	
+				Select Role
+				<label class="radio-inline">
+				<input type="radio" ng-model="user.role" value="Student">Student<br>
+				</label>
+				<label class="radio-inline">
+                <input type="radio" ng-model="user.role" value="Alumini">Alumini<br>
+               </label>
+               <label class="radio-inline">
+               <input type="radio" ng-model="user.role" value="Employee">Employee<br>
+				</label>
+				<input type="submit" value="sign up" ng-click="register()">
+			</form>
+		</div>
+		<div class="clear"></div>
+</div>
+<div class="footer-w3">
+	<p>© 2017 Flat Sign Up Form. All rights reserved | Design by JOBHUB</p>
+</div>-->

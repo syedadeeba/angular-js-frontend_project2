@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="css/jobform.css">
+<body>
+<span>{{message}}</span>
+<div class="w3-main">
+	<!-- Main -->
+	<div class="about-bottom main-agile book-form">
+		<h2 class="tittle">Job Form</h2>
+		<form method="post" name="jobform">
+			<div class="form-date-w3-agileits">
+	              <input type="text" ng-model="job.jobTitle" placeholder="Job Title"><br>
+	              <textarea ng-model="job.jobDescription" placeholder="Job Description"></textarea><br>
+	              <input type="text" ng-model="job.yrsOfExp" placeholder="Years Of Experience "><br>
+               	  <input type="text" ng-model="job.salary" placeholder="Salary"><br>
+	              <input type="text" ng-model="job.skillsRequired" placeholder="Skills Required"><br>
+	              <input type="text" ng-model="job.location" placeholder="Location"><br>
+	              <input type="text" ng-model="job.companyName" placeholder="Company Name"><br>
+	        </div>
+	<input type="submit" value="saveJob" ng-click="saveJob()" class="btn btn-primary">
+	
+</form>
+</div>
+</div>
+</body>
