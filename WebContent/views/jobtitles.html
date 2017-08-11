@@ -9,8 +9,8 @@ Search <input ng-model="jobTitle">
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="j in jobs | filter:jobTitle ">
-				<td><a href="" ng-click="getJobDetail(j.id)">{{j.jobTitle}}</a></td><td>{{j.postedOn | date:'yyyy:MM:dd'}}</td>
+			<tr ng-repeat="job in jobs | filter:jobTitle ">
+				<td><a href="" ng-click="getJobDetail(job.id)">{{job.jobTitle}}</a></td><td>{{job.postedOn | date:'yyyy:MM:dd'}}</td>
 			</tr>
 		</tbody>
 	</table>
