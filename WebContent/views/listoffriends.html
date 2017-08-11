@@ -1,22 +1,25 @@
 <link rel="stylesheet" href="css/listoffriends.css">
-<div>
-{{friendsList}}
-	List Of Friends
+<div class="w3-main">
+	<div class="about-bottom main-agile book-form">
+<div style="color:#fff">
+	<h2 class="tittle">FRIENDS</h2>
 	<table class="table">
 
 	  <tr ng-repeat="f in friendsList">
-		 <td ng-show="currentUser.username==f.fromId">{{f.fromId}}</td>
-		 <td ng-show="currentUser.username==f.toId">{{f.toId}}</td>
+		 <td ng-hide="currentUser.username==f.fromId">{{f.fromId}}</td>
+		 <td ng-hide="currentUser.username==f.toId">{{f.toId}}</td>
 			
-		 <td ng-show="currentUser.username==f.fromId">
-			<img src="http://localhost:5555/backend_project2/getimage/{{f.fromId}}" alt="Image Not Available" width="30px" height="30px" class="img-rounded">
+		 <td ng-hide="currentUser.username==f.fromId">
+			<img src="http://localhost:5555/backend_project2/getimage/{{f.fromId}}" alt="Image Not Available" width="50px" height="50px" class="img-rounded">
 		 </td>
 		 
-		 <td ng-show="currentUser.username==f.toId">
-			<img src="http://localhost:5555/backend_project2/getimage/{{f.toId}}" alt="Image Not Available" width="30px" height="30px" class="img-rounded">
+		 <td ng-hide="currentUser.username==f.toId">
+			<img src="http://localhost:5555/backend_project2/getimage/{{f.toId}}" alt="Image Not Available" width="50px" height="50px" class="img-rounded">
 		 </td>
 			
 		</tr>
 	</table>
 
+</div>
+</div>
 </div>
