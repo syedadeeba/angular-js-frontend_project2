@@ -5,7 +5,7 @@
 		<tr ng-repeat="pr in listOfPendingRequests">
 			<td><img src="http://localhost:5555/backend_project2/getimage/{{pr.fromId}}" height="50" width="50"></td>
 			<td style="color:#fff">{{pr.fromId}}</td>
-			<td><a href="" ng-click="updatePendingRequest(pr.fromId,'A')" class="btn btn-default"style="background-color:#ffb310">Accept</a></td>
+			<td><a href="#/listoffriends" ng-click="updatePendingRequest(pr.fromId,'A')" class="btn btn-default"style="background-color:#ffb310">Accept</a></td>
 			<td><a href="" ng-click="updatePendingRequest(pr.fromId,'D')" class="btn btn-default"style="background-color:#ffb310">Reject</a></td>
 		</tr>
 	</table>

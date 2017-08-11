@@ -25,16 +25,10 @@ app.config(function($routeProvider) {
 		templateUrl : 'views/jobtitles.html',
 		controller : 'JobController'			
 	})
-	
 	.when('/saveblogpost', {
 		templateUrl : 'views/blogpostform.html',
 		controller : 'BlogPostController'
 	})
-.when('/getJobById/:id', {
-		templateUrl : 'views/getjobbyid.html',
-		controller : 'JobController'
-	})
-
 	.when('/getallblogs', {
 		templateUrl : 'views/blogslist.html',
 		controller : 'BlogPostController'
