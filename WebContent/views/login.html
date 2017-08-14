@@ -1,47 +1,28 @@
 <link rel="stylesheet" href="css/login.css">
 <body>
-    {{registrationSuccess}}
-	{{message}} 
-	{{error.message}}
 		<div class="login-form">
+		<div class="w3-main">
+	<div class="about-bottom main-agile book-form" style="background-color:rgba(86, 178, 212, 0.23)">
 				<!---728x90--->
 						<h1>LogIn</h1>
 						<h2><a href="#/registration">Create Account</a></h2>
 				<form>
 					<li>
-						<input type="text" class="text" value="User Name" ng-model="user.username" placeholder="User Name" ><a href="#" class=" icon user"></a>
+						<input type="text" class="text" value="User Name" ng-model="user.username" placeholder="User Name" ><a href="" class="fa fa-user"></a>
 					</li>
 					<li>
-						<input type="password" value="Password" ng-model="user.password" placeholder="Password"><a href="#" class=" icon lock"></a>
+						<input type="password" value="Password" ng-model="user.password" placeholder="Password"><a href="" class=" fa fa-unlock"></a>
 					</li>
 					
 					 <div class ="forgot">
 						<h3><a href="#">Forgot Password?</a></h3>
-						<input type="submit" value="Sign In" ng-disabled="loginForm.$invalid" ng-click="login()"> <a href="#" class=" icon arrow"></a>                                                                                                                                                                                                                                 </h4>
+						<input type="submit" value="Sign In" ng-disabled="loginForm.$invalid" ng-click="login()" style="background-color:rgba(86, 178, 212, 0.23); color:#ffb310" >                                                                                                                                                                                                                                </h4>
 					</div>
 				</form>
 			</div>
+			</div>
+			</div>
 <div class="footer-w3">
-	<p>© 2017 LogIn Form. All rights reserved | Design by JOBHUB</p>
+	<p><center>© 2017 LogIn Form. All rights reserved | Design by JOBHUB</center></p>
 </div>
 </body>
-<!-- 
-    <div class="main-agileits">
-	<h2 class="sub-head">Log In</h2>
-	<div class="sub-main">	
-	<form action="#" method="post">
-	    <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-	    <input id="username"type="text" name="username" ng-model="user.username" placeholder="Enter Username" required><br>
-	    <p ng-show="loginForm.username.$invalid && loginForm.username.$dirty" style="color:red">Username cannot be empty</p>
-		
-		<span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
-		<input type="password" name="password"  ng-model="user.password" placeholder="Enter Password" required><br>
-		<p ng-show="loginForm.password.$invalid && loginForm.password.$dirty" style="color:red">Password cannot be empty</p>
-		<input type="submit" value="login" ng-disabled="loginForm.$invalid" ng-click="login()" class="btn btn-primary">
-		<input type="checkbox" checked="checked"> Remember me
-		<br>
-	</form>
-	</div>
-</div>
-
-</body>-->
