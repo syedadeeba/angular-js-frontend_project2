@@ -166,7 +166,7 @@ h2.tittle {
 	.footer-w3l p {
 		margin: 2em 0 2em;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"]{
 		width: 92.8%;
 	}
 }
@@ -203,7 +203,7 @@ h2.tittle {
 		font-size: 0.9em;
 		letter-spacing: 2px;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"]{
 		width: 92%;
 		font-size: 0.85em;
 	}
@@ -235,7 +235,7 @@ h2.tittle {
 	.about-bottom {
 		width: 47%;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"],.book-form input[type="password"] {
 		width: 91.5%;
 	}
 }
@@ -271,7 +271,7 @@ h2.tittle {
 	.about-bottom {
 		width: 55%;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"]{
 		width: 91%;
 	}
 }
@@ -286,7 +286,7 @@ h2.tittle {
 	.book-form label {
 		font-size: 0.85em;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"]{
 		font-size: 0.8em;
 	}
 	.book-form form input[type="submit"] {
@@ -295,7 +295,7 @@ h2.tittle {
 	}
 }
 @media(max-width: 640px){
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
 		width: 90.5%;
 	}
 	.book-form form input[type="submit"] {
@@ -315,7 +315,7 @@ h2.tittle {
 	}
 }
 @media(max-width: 568px){
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"],.book-form input[type="password"] {
 		padding: 7px 16px;
 	}
 	.about-bottom {
@@ -339,7 +339,7 @@ h2.tittle {
 	.book-form label {
 		font-size: 0.8em;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
 		width: 90%;
 	}
 	.book-form form input[type="submit"] {
@@ -362,7 +362,7 @@ h2.tittle {
 	h2.tittle {
 		font-size: 1.2em;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
 		width: 89%;
 	}
 	.book-form form input[type="submit"] {
@@ -373,7 +373,7 @@ h2.tittle {
 	}
 }
 @media(max-width: 384px){
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
 		font-size: 0.75em;
 		width: 87%;
 	}
@@ -396,7 +396,7 @@ h2.tittle {
 	h2.tittle {
 		font-size: 1.15em;
 	}
-	.book-form input[type="text"], .book-form input[type="email"] {
+	.book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
 		padding: 6px 16px;
 		width: 85%;
 	}

@@ -5,14 +5,7 @@ body {
 	text-align:center;
 }
 @CHARSET "ISO-8859-1";
-@CHARSET "ISO-8859-1";
-@CHARSET "ISO-8859-1";/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-/* reset */
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
@@ -43,39 +36,6 @@ body {
     background:url(../images/img02.jpg) fixed;
     background-size: cover;
 	text-align:center;
-}
-.chat.outgoing {
-    float: right;
-    background: #ffb310;
-}
-.chat {
-    margin: 10px;
-    padding: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    width: 70%;
-}
-.chat .from {
-    display: block;
-    float: right;
-    font-weight: bold;
-    color: #777;
-}
-.chat .message {
-    font-size: 1.6em;
-}
-.chat.incoming {
-    float: left;
-    background: #d9edf7;
-}
-.chat {
-    margin: 10px;
-    padding: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    width: 70%;
 }
 
 *, *::before, *::after {
@@ -201,29 +161,10 @@ textarea{
 }
 /*-- //about-bottom --*/
 /*--//main--*/
-/*--footer--*/
-.footer-w3l p {
-    margin: 2em 0 1em;
-    color: #fff;
-    font-size: 1em;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-.footer-w3l a {
-    color: #fff;
-}
-.footer-w3l a:hover {
-    color: #ffb310;
-    text-decoration: underline;
-}
-/*--//footer--*/
 /*--responsive--*/
 @media(max-width: 1440px){
 	.about-bottom {
 		width: 34%;
-	}
-	.footer-w3l p {
-		margin: 2em 0 2em;
 	}
 	.book-form input[type="text"], .book-form input[type="email"]{
 		width: 92.8%;
@@ -246,9 +187,6 @@ textarea{
 	}
 	.about-bottom {
 		width: 37%;
-	}
-	.footer-w3l p {
-		font-size: 0.95em;
 	}
 }
 @media(max-width: 1080px){
@@ -276,9 +214,6 @@ textarea{
 	.book-form form input[type="submit"] {
 		font-size: 0.95em;
 		width: 35%;
-	}
-	.footer-w3l p {
-		font-size: 0.9em;
 	}
 }
 @media(max-width: 1050px){
@@ -323,9 +258,7 @@ textarea{
 	.header h1 {
 		margin: 1.5em 0 1.2em;
 	}
-	.footer-w3l p {
-		margin: 5em 0 2em;
-	}
+	
 }
 @media(max-width: 767px){
 
@@ -333,9 +266,6 @@ textarea{
 @media(max-width: 736px){
 	.header h1 {
 		margin: 0.5em 0;
-	}
-	.footer-w3l p {
-		margin: 2em 0 2em;
 	}
 	.about-bottom {
 		width: 55%;
@@ -380,9 +310,6 @@ textarea{
 		font-size: 0.9em;
 		width: 39%;
 	}
-	.footer-w3l p {
-		font-size: 0.85em;
-	}
 }
 @media(max-width: 600px){
 	.header h1 {
@@ -402,9 +329,7 @@ textarea{
 	.about-bottom {
 		width: 65%;
 	}
-	.footer-w3l p {
-		letter-spacing: 1px;
-	}
+	
 }
 @media(max-width: 480px){
 	.header h1 {
@@ -431,18 +356,9 @@ textarea{
 		padding: .65em 0em;
 		margin-top: 0.4em;
 	}
-	.footer-w3l p {
-		letter-spacing: 2px;
-		line-height: 1.9em;
-		margin: 1.5em 0 1.5em;
-	}
 }
 @media(max-width: 414px){
-	.header h1 {
-		font-size: 1.9em;
-		letter-spacing: 1px;
-		margin: 0.7em 0;
-	}
+	
 	h2.tittle {
 		font-size: 1.2em;
 	}
@@ -454,9 +370,6 @@ textarea{
 	}
 	.book-form form input[type="submit"] {
 		font-size: 0.85em;
-	}
-	.footer-w3l p {
-		font-size: 0.8em;
 	}
 }
 @media(max-width: 384px){
@@ -506,8 +419,5 @@ textarea{
 		font-size: 0.78em;
 		letter-spacing: 1px;
 	}
-	.footer-w3l p {
-		font-size: 0.75em;
-		letter-spacing: 1px;
-	}
+	
 }
